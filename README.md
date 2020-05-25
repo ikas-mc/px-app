@@ -1,6 +1,6 @@
 # project-x app
 
-
+安卓9以上,实现ops/app/组件管理
 
 
 ## 安卓10
