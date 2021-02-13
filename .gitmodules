@@ -1,6 +1,3 @@
 [submodule "px-app-proto"]
 	path = px-app-proto
 	url = https://github.com/ikas-mc/px-app-proto
-[submodule "px-repo"]
-	path = px-repo
-	url = https://github.com/ikas-mc/px-repo.git
