@@ -2,6 +2,8 @@
 
 安卓9以上,实现op/app/组件管理
 
+https://github.com/ikas-mc/px-app/wiki
+
 
 ## 规则库
 
