@@ -1,19 +1,19 @@
-fluentui icons  
+Fluentui Icons  
 https://github.com/microsoft/fluentui-system-icons
 
-insetter   
+Insetter   
 https://github.com/chrisbanes/insetter/
 
-libsu   
+Libsu   
 https://github.com/topjohnwu/libsu
 
-librootjava   
+Librootjava   
 https://github.com/Chainfire/librootjava
 
 FreeReflection   
 https://github.com/tiann/FreeReflection
 
-glide   
+Glide   
 https://github.com/bumptech/glide
 
 Shizuku   
@@ -25,18 +25,23 @@ https://github.com/lightbend/config
 jgit   
 https://www.eclipse.org/jgit/
 
-appcenter   
+AppCenter   
 https://github.com/Microsoft/appcenter
 
-pebble template   
+Pebble Template   
 https://github.com/PebbleTemplates/pebble
 
-material   
+Material   
 https://material.io/develop/android
 
-jetpack   
+Jetpack   
 https://developer.android.com/jetpack
 
-android   
+Android   
 https://cs.android.com/android/platform/superproject/
 https://github.com/LineageOS
+
+TinyPinyin   
+https://github.com/biezhi/TinyPinyin
+
+https://github.com/promeG/TinyPinyin
