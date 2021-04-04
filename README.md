@@ -20,7 +20,7 @@ https://github.com/ikas-mc/px-repo
 https://docs.github.com/v3/guides/managing-deploy-keys/#deploy-keys
 
 
-##  AppOps功能变更
+##  系统AppOps功能变更
 
 ### 系统默认的权限管理器
 * 页面权限状态会同时检查权限状态与op状态(uid mode,下同)
@@ -42,15 +42,17 @@ https://docs.github.com/v3/guides/managing-deploy-keys/#deploy-keys
 
 ### 拦截所有对AppOps同步与修改(已实现)
 
-1. 通过修改系统service.jar,然后使用magisk module应用
-https://github.com/ikas-mc/Prevent-Op-Sync-Patcher
+1. 通过修改系统service.jar,然后制作magisk module
+
+  https://github.com/ikas-mc/Prevent-Op-Sync-Patcher
 
 2. xposed模块
-https://repo.xposed.info/module/ikas.android.projectx.hook.prevent
+
+  https://repo.xposed.info/module/ikas.android.projectx.hook.prevent
 
 
-### 拦截AppOps的检查方法,采用内置规则(已实现)
-1. xposed模块
+### ~~拦截AppOps的检查方法,采用内置规则(已实现)~~
+1. ~~xposed模块~~
 
 ### 替换系统默认的权限控制器,修改内置的同步策略(未实现)
 
