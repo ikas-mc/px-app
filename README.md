@@ -1,67 +1,66 @@
 # Invalid App
 
-安卓9以上,实现op/app/组件管理
+安卓10以上,实现op/app/组件管理
 
 https://github.com/ikas-mc/px-app/wiki
 
 
 ## 规则库
 
-公共:https://github.com/ikas-mc/px-repo 
+### 公共库
+https://github.com/ikas-mc/px-repo 
 
-本公共库暂不接受具体app的规则,如果你需要分享规则,请fork或者使用私有库
+包含通用的规则与模板
 
-私有:与公共库一样的结构,自行创建private 项目即可
+### 私有库
+用于自定义规则,与公共库一样的结构,自行创建private项目即可
 
-私有库使用git协议,在github项目设置中添加Deploy keys,然后在app设置页面上传添加的key
+私有库使用ssh协议,在github项目设置中添加Deploy keys,然后在app设置页面上传key
 
-## 安卓10  11 的一些问题
+https://docs.github.com/v3/guides/managing-deploy-keys/#deploy-keys
 
-### appOp功能
 
-如果需要实现忽略/单项权限控制(非权限组)等功能则必须使用补丁,否则appOp功能无法保证,原因如下
+##  AppOps功能变更
 
-1. 系统默认的权限控制器在判断是否具有某个权限时会同时检查op状态(uid mode,下同)
-2. 系统默认的权限控制器在授权或修改权限时,会立即修改op状态
-3. 系统默认的权限控制器以权限组为单位,当应用请求授权时,会触发组内状态修正,导致op状态不定
-4. 系统会自动根据权限状态修正op状态,会自动重置一些op
-5. 系统默认存在几种机制触发自动同步,如权限变更,任意app卸载导致权限检查
-6. 系统实现单次授权等新的方式
-7. 其他待补充
+### 系统默认的权限管理器
+* 页面权限状态会同时检查权限状态与op状态(uid mode,下同)
+* 修改权限时,会立即修改权限对应的op状态
+* 当应用检查权限时,会根据权限组状态修正组内所有权限状态与op状态
 
-目前难有良好的方案,除非大量修改系统与默认权限控制器逻辑,但这与未来系统实现相悖
+### 系统权限与op同步机制
+* 会根据权限状态自动修正权限对应的op状态,反之亦然
+* 系统默认存在多种触发同步的机制,比如任意app的卸载,权限变更
+* 会自动重置op状态,如package mode
 
-App目前支持的方法:
+### 系统AppOps管理
+* 系统检查op状态时,先检查uid mode,如果uid mode已经设置就不再继续检查package mode
+* 系统内置的组件对op的修改采用uid mode,所以外部App对op修改也需要采用uid mode,否则会有冲突
 
-1.直接拦截所有同步方式(通过给系统service.jar打补丁或者xposed模块方式)
+## AppOps补丁
+如果期望AppOps实现独立控制则必须使用补丁,目前有三种方式
+注意:仅针对类原生系统,第三方系统基本都有自己的修改
 
-补丁方式 (非完整,待设计)
+### 拦截所有对AppOps同步与修改(已实现)
 
-> https://github.com/ikas-mc/Prevent-Op-Sync-Patcher
+1. 通过修改系统service.jar,然后使用magisk module应用
+https://github.com/ikas-mc/Prevent-Op-Sync-Patcher
 
-xposed模块
+2. xposed模块
+https://repo.xposed.info/module/ikas.android.projectx.hook.prevent
 
-App 模式页面直接安装
 
-或者通过
+### 拦截AppOps的检查方法,采用内置规则(已实现)
+1. xposed模块
 
-> https://repo.xposed.info/module/ikas.android.projectx.hook.prevent
-
-~~2.直接忽略系统内置op规则,采用app内置规则,拦截所有app op检查点~~
-
-~~xposed模块:App 模式页面直接安装~~
-
-3.修改权限控制器与内置的同步策略
-
-取消权限组,增加权限忽略标志等(待实现)
+### 替换系统默认的权限控制器,修改内置的同步策略(未实现)
 
 > 权限控制器
 >
 > https://source.android.google.cn/devices/architecture/modular-system/permissioncontroller
 
-### ifw功能
+## ifw功能
 
-安卓10以上,使用ifw禁用组件,有可能导致系统无限重启进入recovery模式
+禁用某些组件可能导致系统无限重启并进入recovery模式
 
 临时解决方法:
 
