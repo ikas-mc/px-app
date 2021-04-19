@@ -4,6 +4,14 @@
 
 https://github.com/ikas-mc/px-app/wiki
 
+## 下载
+
+注意   
+本应用为个人研究性app,不建议普通用户使用   
+本应用可能对系统或者应用造成损坏,请自行承担相应后果
+
+https://github.com/ikas-mc/fdroid-repo
+
 
 ## 规则库
 
