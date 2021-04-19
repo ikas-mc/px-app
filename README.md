@@ -5,12 +5,15 @@
 https://github.com/ikas-mc/px-app/wiki
 
 ## 下载
+https://github.com/ikas-mc/fdroid-repo
 
 注意   
 本应用为个人研究性app,不建议普通用户使用   
 本应用可能对系统或者应用造成损坏,请自行承担相应后果
 
-https://github.com/ikas-mc/fdroid-repo
+本应用需要root或者Sui或者Shizuku(adb模式功能受限)   
+root模式不支持后台运行,如果需要后台运行,请使用Sui/Shizuku
+https://github.com/RikkaApps/Sui
 
 
 ## 规则库
@@ -76,4 +79,7 @@ https://docs.github.com/v3/guides/managing-deploy-keys/#deploy-keys
 
 https://github.com/ikas-mc/px-app/issues/1
 
-​        
+## 源码呢
+暂不开源   
+插件源码可以参考:   
+https://github.com/ikas-mc/Prevent-Op-Sync-Patcher
