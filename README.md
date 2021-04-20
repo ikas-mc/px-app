@@ -4,6 +4,11 @@
 
 https://github.com/ikas-mc/px-app/wiki
 
+![appops](https://ikas-mc.github.io/px-app/screenshots/appops.png)
+![record](https://ikas-mc.github.io/px-app/screenshots/record.png)
+
+
+
 ## 下载
 https://github.com/ikas-mc/fdroid-repo
 
