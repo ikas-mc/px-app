@@ -4,9 +4,7 @@
 
 https://github.com/ikas-mc/px-app/wiki
 
-![appops](https://ikas-mc.github.io/px-app/screenshots/appops.png)
-![record](https://ikas-mc.github.io/px-app/screenshots/record.png)
-
+<img src="https://raw.githubusercontent.com/ikas-mc/px-app/main/docs/screenshots/appops.png" width=260 > <img src="https://raw.githubusercontent.com/ikas-mc/px-app/main/docs/screenshots/record.png" width=260 >
 
 
 ## 下载
