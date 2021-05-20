@@ -10,9 +10,6 @@ https://github.com/topjohnwu/libsu
 Librootjava   
 https://github.com/Chainfire/librootjava
 
-FreeReflection   
-https://github.com/tiann/FreeReflection
-
 Glide   
 https://github.com/bumptech/glide
 
@@ -49,3 +46,9 @@ https://github.com/promeG/TinyPinyin
 
 okhttp
 https://github.com/square/okhttp
+
+MPAndroidChart
+https://github.com/PhilJay/MPAndroidChart
+
+dependency-management-plugin
+https://github.com/spring-gradle-plugins/dependency-management-plugin
