@@ -1,6 +1,6 @@
 # Invalid App
 
-For Android 10+,Appops/App/Component Management
+For Android 10+, Manage App/App Component(IFW)/Permission/AppOps
 
 https://github.com/ikas-mc/px-app/wiki
 
@@ -52,6 +52,8 @@ https://github.com/ikas-mc/Prevent-Op-Sync-Patcher
 2. Xposed module  
 https://repo.xposed.info/module/ikas.android.projectx.hook.prevent
 
+#### Config
+Open app and go to mode page then check appOps option
 
 ## ifw
 
