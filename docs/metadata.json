@@ -1,7 +1,7 @@
 {
 "applicationId": "ikas.android.projectx.application",
 "variantName": "release",
-"versionCode": 20220404,
-"versionName": "2022.4.4",
-"outputFile": "InvalidAPP-2022.4.4-release.apk"
+"versionCode": 20221003,
+"versionName": "2022.10.3",
+"outputFile": "InvalidAPP-2022.10.3-release.apk"
 }
