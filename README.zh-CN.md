@@ -41,7 +41,7 @@ https://docs.github.com/v3/guides/managing-deploy-keys/#deploy-keys
 1. 通过修改系统service.jar,然后制作magisk module  
 https://github.com/ikas-mc/Prevent-Op-Sync-Patcher
 
-2. xposed模块  
+2. xposed模块  (已废弃)
 https://repo.xposed.info/module/ikas.android.projectx.hook.prevent
 
 
